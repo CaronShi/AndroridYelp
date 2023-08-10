@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+
+        <ImageView
+            android:id="@+id/toolbar_calender"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/calender">
+
+        </ImageView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/BusinessSearch"
+        android:layout_width="332dp"
+        android:layout_height="61dp"
+        android:textStyle="bold"
+        android:padding='10dp'
+        android:text="@string/BusinessSearch"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+
+    <AutoCompleteTextView
+        android:id="@+id/keyword"
+        android:padding='10dp'
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="209dp"
+        android:layout_height="50dp"
+        android:hint="@string/keyword"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="93dp" />
+
+    <EditText
+        android:padding='10dp'
+        android:layout_marginBottom="10dp"
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="@string/distance"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="151dp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="158dp"
+        android:layout_height="wrap_content"
+        android:padding='10dp'
+        android:text="@string/category"
+        android:textColor="@color/purple"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="169dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:padding='10dp'
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="228dp" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/location"
+        android:inputType="textPersonName"
+        android:padding='10dp'
+        android:layout_marginBottom="10dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/auto"
+        android:buttonTint="@color/purple"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="335dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            tools:layout_editor_absoluteX="70dp"
+            tools:layout_editor_absoluteY="387dp" />
+
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="387dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:text="Results"
+        android:layout_width="332dp"
+        android:layout_height="61dp"
+        android:padding='10dp'
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <TextView
+        android:id="@+id/no_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Results Found!"
+        android:textColor="@color/red"
+        android:visibility="invisible"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/table_view"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

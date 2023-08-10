@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.HelloWorld" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryVariant">@color/red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+        <item name="colorSecondaryVariant">@color/red</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="colorControlHighlight">@color/light_green</item>
+        <item name="colorControlActivated">@color/light_green</item>
+        <item name="android:timePickerDialogTheme">@style/ClockTimePickerDialog</item>
+        <item name="android:datePickerDialogTheme">@style/DialogDatePicker.Theme</item>
+
+
+    </style>
+
+    <style name="DialogDatePicker.Theme" parent="Theme.AppCompat.DayNight.Dialog">
+        <item name="android:headerBackground">@color/light_green</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/App.Dialog.NegativeButton</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/App.Dialog.NegativeButton</item>
+
+    </style>
+
+    <style name="ClockTimePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:headerBackground">@color/light_green</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/App.Dialog.NegativeButton</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/App.Dialog.NegativeButton</item>
+
+    </style>
+
+    <style name="App.Dialog.NegativeButton" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <style name="Theme.HelloWorld.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.HelloWorld.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.HelloWorld.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
