@@ -8,7 +8,7 @@
     <string name='location'><font>Location</font><font color="red">*</font></string>
 
     <string name='category'><font>Category</font><font color="red">*</font></string>
-    <string name="google_map_api">AIzaSyCV7zMBjSOoQTvBT_rPTEIzYSmlXQggfQs</string>
+    <string name="google_map_api">*</string>
     <string name='auto'>Auto-detect my location</string>
     <string name='submit'>SUBMIT</string>
     <string name='clear'>CLEAR</string>
@@ -31,7 +31,7 @@
     <string name="action_sign_in_short">Sign in</string>
     <string name="welcome">"Welcome!"</string>
     <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="invalid_password">Password must be > 5 characters</string>
     <string name="login_failed">"Login failed"</string>
     <string name="title_activity_splash">SplashActivity</string>
     <!-- Strings used for fragments for navigation -->
